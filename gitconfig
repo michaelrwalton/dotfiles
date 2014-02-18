@@ -1,0 +1,9 @@
+[user]
+	name = Michael Walton
+[core]
+	excludesfile = ~/.gitignore_global
+[alias]
+	lg = log --graph --decorate --pretty=format:'%Cred%h%C(reset) - %Cblue%cn%Cblue (%cr)%n%Cgreen %s%n'
+	dif = diff --color
+[include]
+  path = ~/.gitconfig.local

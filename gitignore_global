@@ -1,0 +1,8 @@
+.settings/*
+.project
+.buildpath
+.DS_Store
+.sass-cache/*
+config.rb
+ChromePhp.php
+*.swp
