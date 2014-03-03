@@ -173,7 +173,7 @@ set noswapfile
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Use spaces instead of tabs
 set expandtab
-
+    
 " Be smart when using tabs ;)
 set smarttab
 
@@ -414,3 +414,4 @@ function! <SID>BufcloseCloseIt()
 endfunction
 
 set mouse=a
+set number
