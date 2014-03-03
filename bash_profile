@@ -50,6 +50,8 @@ alias ll="ls -la"
 alias cls="clear"
 alias cowfortune="fortune | cowsay"
 alias sshconf="cat ~/.ssh/config"
+alias tarc="tar cvzf"
+alias tarx="tar xvzf"
 
 export PATH=/usr/local/bin:/usr/local/sbin:/Users/michael.walton/bin:$PATH
 # Nicely formatted terminal prompt
