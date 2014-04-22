@@ -6,13 +6,19 @@ locals="gitconfig"
 __install_file(){
     if [ -f ~/.$1 ]
     then
-        echo "$1 exists! Would you like to overwrite? (y/n)"
+        echo "$1 exists! Would you like to overwrite/append? (o/a/n)"
         read action
         case "$action" in
-        y)
-          rm -rf ~/.$1
+        o)
+          mv -v ~/.$1 ~/.$1.old
           ln -s ~/dotfiles/$1 ~/.$1
           echo "$1 overwritten"
+          ;;
+        a)
+          echo "Appending $1 to current version"
+          cat ~/.$1 >> ~/dotfiles/$1
+          mv -v ~/.$1 ~/.$1.old
+          ln -s ~/dotfiles/$1 ~/.$1
           ;;
         n)
           echo "Skipping $1"

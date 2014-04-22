@@ -58,4 +58,3 @@ export PATH=/usr/local/bin:/usr/local/sbin:/Users/michael.walton/bin:$PATH
 export PS1='\n\[$bold\]\[$black\][\[$dk_blue\]\@\[$black\]]-[\[$green\]\u\[$yellow\]\[$black\]]-[\[$pink\]\w\[$black\]]\[\033[0;33m\]$(__vcs_name) \[\033[00m\]\[$reset\]\n\[$reset\]\$ '
 
 profile
-
