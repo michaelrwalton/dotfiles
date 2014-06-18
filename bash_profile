@@ -39,7 +39,6 @@ lt_blue=$(tput -Txterm setaf 6)
 bold=$(tput -Txterm bold)
 reset=$(tput -Txterm sgr0)
 
-alias ls='ls -FG'
 alias dir='dir -F --color=always'
 alias cp='cp -iv'
 alias rm='rm -i'
@@ -53,9 +52,8 @@ alias sshconf="cat ~/.ssh/config"
 alias tarc="tar cvzf"
 alias tarx="tar xvzf"
 
-export PATH=/usr/local/bin:/usr/local/sbin:/Users/michael.walton/bin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 # Nicely formatted terminal prompt
 export PS1='\n\[$bold\]\[$black\][\[$dk_blue\]\@\[$black\]]-[\[$green\]\u\[$yellow\]\[$black\]]-[\[$pink\]\w\[$black\]]\[\033[0;33m\]$(__vcs_name) \[\033[00m\]\[$reset\]\n\[$reset\]\$ '
 
-profile
-
+source ~/.bash_profile.local

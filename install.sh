@@ -1,7 +1,7 @@
 #/bin/bash bash
 
 files="vimrc gitconfig gitignore_global bash_profile bash_git"
-locals="gitconfig"
+locals="gitconfig bash_profile"
 
 __install_file(){
     if [ -f ~/.$1 ]
