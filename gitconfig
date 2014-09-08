@@ -2,6 +2,7 @@
 	name = Michael Walton
 [core]
 	excludesfile = ~/.gitignore_global
+	autocrlf = input
 [alias]
 	lg = log --graph --decorate --pretty=format:'%Cred%h%C(reset) - %Cblue%cn%Cblue (%cr)%n%Cgreen %s%n'
 	dif = diff --color

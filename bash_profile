@@ -28,6 +28,8 @@ __vcs_name() {
     fi
 }
 
+addhost () { echo "127.0.0.1 $1" | sudo tee -a /etc/hosts; }
+
 black=$(tput -Txterm setaf 0)
 red=$(tput -Txterm setaf 1)
 green=$(tput -Txterm setaf 2)
@@ -51,6 +53,7 @@ alias cowfortune="fortune | cowsay"
 alias sshconf="cat ~/.ssh/config"
 alias tarc="tar cvzf"
 alias tarx="tar xvzf"
+alias vm='ssh vagrant@127.0.0.1 -p 2222'
 
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 # Nicely formatted terminal prompt
