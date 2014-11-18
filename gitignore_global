@@ -8,3 +8,4 @@ node_modules/
 config.rb
 ChromePhp.php
 *.swp
+.idea/
