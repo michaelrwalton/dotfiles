@@ -4,7 +4,7 @@
 	excludesfile = ~/.gitignore_global
 	autocrlf = input
 [alias]
-	lg = log --graph --decorate --pretty=format:'%Cred%h%C(reset) - %Cblue%cn%Cblue (%cr)%n%Cgreen %s%n'
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
 	dif = diff --color
 [include]
     path = ~/.gitconfig.local
