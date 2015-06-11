@@ -9,7 +9,13 @@
 [include]
     path = ~/.gitconfig.local
 [filter "media"]
-	clean = git-media-clean %f
-	smudge = git-media-smudge %f
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
 [push]
 	default = simple
+[color "diff"]
+    meta = yellow blink
+    frag = magenta blink
+    old = red blink
+    new = green blink
