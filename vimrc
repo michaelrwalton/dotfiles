@@ -187,7 +187,7 @@ set tw=500
 
 set ai "Auto indent
 set si "Smart indent
-set wrap "Wrap lines
+set nowrap "Wrap lines
 
 
 """"""""""""""""""""""""""""""
@@ -415,3 +415,5 @@ endfunction
 
 set mouse=a
 set number
+execute pathogen#infect()
+map <C-n> :NERDTree<CR>
