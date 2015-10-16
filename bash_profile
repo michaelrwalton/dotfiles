@@ -54,9 +54,11 @@ alias sshconf="cat ~/.ssh/config"
 alias tarc="tar cvzf"
 alias tarx="tar xvzf"
 alias vm='ssh vagrant@127.0.0.1 -p 2222'
+alias behat="vendor/bin/behat"
 
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 # Nicely formatted terminal prompt
 export PS1='\n\[$bold\]\[$black\][\[$dk_blue\]\@\[$black\]]-[\[$green\]\u\[$yellow\]\[$black\]]-[\[$pink\]\w\[$black\]]\[\033[0;33m\]$(__vcs_name) \[\033[00m\]\[$reset\]\n\[$reset\]\$ '
 
 source ~/.bash_profile.local
+export PATH=/usr/local/lib:/usr/local/bin:$PATH
