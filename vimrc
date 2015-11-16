@@ -415,5 +415,4 @@ endfunction
 
 set mouse=a
 set number
-execute pathogen#infect()
-map <C-n> :NERDTree<CR>
+source ~/.vimrc.local

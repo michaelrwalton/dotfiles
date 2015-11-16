@@ -1,7 +1,7 @@
 #/bin/bash bash
 
 files="vimrc gitconfig gitignore_global bash_profile bash_git"
-locals="gitconfig bash_profile"
+locals="gitconfig bash_profile vimrc"
 
 __install_file(){
     if [ -f ~/.$1 ]
@@ -10,14 +10,14 @@ __install_file(){
         read action
         case "$action" in
         o)
-          mv -v ~/.$1 ~/.$1.old
+          cp -v ~/.$1 ~/.$1.old
           ln -s ~/dotfiles/$1 ~/.$1
           echo "$1 overwritten"
           ;;
         a)
           echo "Appending $1 to current version"
           cat ~/.$1 >> ~/dotfiles/$1
-          mv -v ~/.$1 ~/.$1.old
+          cp -v ~/.$1 ~/.$1.old
           ln -s ~/dotfiles/$1 ~/.$1
           ;;
         n)
