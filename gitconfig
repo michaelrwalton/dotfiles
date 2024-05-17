@@ -1,20 +1,25 @@
 [user]
-	name = Michael Walton
+    name = Michael Walton
 [core]
-	excludesfile = ~/.gitignore_global
-	autocrlf = input
+    excludesfile = ~/.gitignore_global
+    autocrlf = input
 [alias]
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
-	dif = diff --color
-    resetone = reset --hard HEAD~1
+    dif = diff --color
+    s = status
+    co = checkout
+    cob = checkout -b
+    cam = commit -am
+    bv = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
+    done = !git push origin HEAD
 [include]
     path = ~/.gitconfig.local
 [filter "media"]
-	required = true
-	clean = git media clean %f
-	smudge = git media smudge %f
+    required = true
+    clean = git media clean %f
+    smudge = git media smudge %f
 [push]
-	default = simple
+    default = simple
 [color "diff"]
     meta = yellow blink
     frag = magenta blink

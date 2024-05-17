@@ -1,4 +1,3 @@
-bower_components/
 node_modules/
 .settings/*
 .project
@@ -6,6 +5,8 @@ node_modules/
 .DS_Store
 .sass-cache/*
 config.rb
-ChromePhp.php
 *.swp
 .idea/
+build/
+coverage/
+.env
